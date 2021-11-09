@@ -1,0 +1,129 @@
+.animated {
+    animation: hello-goodbye 4s infinite;
+    width: fit-content;
+    color:#00FFFF;   
+    cursor: pointer;
+    text-shadow: 3px 0px 0px #000000;
+}
+@keyframes hello-goodbye {
+    0% {
+        transform: translateY(-60px) rotateX(0.7turn);
+        opacity: 0;
+    }
+    50% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+}
+
+
+.animatedH2 {
+    animation: hello-goodbyeH2 3s infinite;
+    width: fit-content;
+}
+@keyframes hello-goodbyeH2 {
+    0% {
+        transform: translateY(-60px) rotateX(0.7turn);
+        opacity: 0;
+    }
+    50% {
+        transform: none;
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-230px) rotateZ(-90deg) scale(0.5);
+        opacity: 0;
+    }
+}
+
+.agrandarTexto {
+    animation: agrandarT 4s 2;
+}
+
+@keyframes agrandarT {
+    0% {
+        font-size: 200%;
+    }
+    50% {
+        font-size: 250%;
+    }
+    100% {
+        font-size: 200%;
+    }
+}
+
+
+.slide {
+    animation: slide 4s infinite linear alternate;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.slideLeft {
+    animation: slideLeft 4s infinite linear;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.opacity-propio {
+    animation: opacity-propio 6s infinite;
+}
+
+@keyframes opacity-propio {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+#app-messenger, #app-whatsapp{
+    position: fixed;
+    right: -25px;
+    bottom: 25px;
+    width: 100px;
+    z-index: 1000;
+    display: none;
+}
+#app-whatsapp{
+    animation: opacity-propio 6s infinite;
+    bottom: 55px;
+    display: block;
+}
+#app-messenger i, #app-whatsapp i{
+    font-size: 63px;
+}
+#app-whatsapp i{
+    color: #1ebea5;
+}
+#app-messenger i{
+    color: #0084ff;	
+}
